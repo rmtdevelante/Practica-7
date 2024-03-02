@@ -1,0 +1,43 @@
+<!DOCTYPE html><!--Esta línea define el tipo de documento como HTML5, lo cual es estándar en la mayoría de 
+las páginas web modernas.-->
+<html lang="en"><!-- Este elemento <html> es el contenedor raíz de todo el contenido HTML de la página. 
+El atributo lang="en" especifica que el idioma de la página es inglés (en inglés).-->
+<head><!--Esta es la sección de encabezado de la página, que contiene metadatos sobre el documento, 
+como el título, enlaces a hojas de estilo y scripts, y otros elementos que no se muestran directamente en 
+la página.-->
+    <meta charset="UTF-8"><!-- Este elemento establece la codificación de caracteres de la página como UTF-8, 
+    que es una codificación universal que admite la mayoría de los caracteres del mundo.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Este meta elemento configura la 
+    vista del puerto (viewport) de la página para que se ajuste al ancho del dispositivo y se inicie con una escala
+    inicial de 1.-->
+    <title>Formulario con Video de Fondo</title><!--Define el título de la página que aparecerá en la pestaña
+    del navegador.-->
+    <link rel="stylesheet" type="text/css" href="CSS/Style.css"><!--Enlaza la página con una hoja de estilos
+    externa llamada "Style.css" que se encuentra en la carpeta "CSS" del directorio raíz del sitio web.-->
+</head><!-- indica el cierre de la etiqueta del encabezado -->
+<body><!--contiene todo el contenido visible de la página, como texto, imágenes, videos, formularios, etc.-->
+    <video autoplay loop muted id="videoFondo"><!-- Inserta un elemento de video en la página.-->
+      <source src="video/GOW.mp4" type="video/mp4"><!--Especifica la ruta del 
+        archivo de video ("GOW.mp4") y el tipo MIME del video (en este caso, "video/mp4").-->
+    </video><!--Indica el cierre de la etiqueta para insertar un video-->
+    <div class="contenedor"> <!--Define un contenedor con la clase CSS "contenedor"-->
+        <img src="imagen/guerra.png" alt="Imagen de perfil" class="perfil">
+        <!--Inserta una imagen en la página desde la ruta especificada con el atributo src.-->
+        <div class="contenido"><!--Define un contenedor con la clase CSS "contenido".-->
+            <h2 class="subtitulo">Registro</h2><!--Crea un título de nivel 2 con la clase CSS "subtitulo" 
+            y el texto "Registro".-->
+            <div class="hijo"> <!-- Define un contenedor con la clase CSS "hijo". -->
+                <input type="text" name="nombre" placeholder="Nombre del usuario" required><br>
+                <!-- Crea un campo de entrada de texto para que el usuario ingrese su nombre-->
+                <input type="password" name="contraseña" placeholder="Contraseña" required><br>
+                <!--Crea un campo de entrada de contraseña para que el usuario ingrese su contraseña. -->
+                <input type="email" name="email" placeholder="Correo electrónico" required><br>
+                <!-- Crea un campo de entrada de correo electrónico para que el usuario ingrese su dirección 
+                de correo electrónico. También se especifica como obligatorio. -->
+                <button type="submit" class="boton">Registrarse</button>
+                <!-- Crea un botón de envío con el texto "Registrarse" y la clase CSS "boton".-->
+            </div><!--Cierra el contenedor con la clase "hijo".-->
+        </div><!-- Cierra el contenedor con la clase "contenido".-->
+    </div><!--Cierra el contenedor con la clase "contenedor".-->
+</body><!-- Cierra la etiqueta del cuerpo de la página. -->
+</html><!--Cierra la etiqueta html de la página.-->

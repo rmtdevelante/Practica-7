@@ -1,0 +1,53 @@
+#videoFondo {/*Como declaramos un "id" dentro de etiqueta video se hace referencia de esta forma para estilarlo*/
+    position: fixed; /* Establece la posición del elemento en relación con la ventana del navegador */
+    top: 0; /* Sitúa el borde superior del elemento en la parte superior del contenedor */
+    left: 0; /* Sitúa el borde izquierdo del elemento en el lado izquierdo del contenedor */
+    width: 100%; /* Establece el ancho del elemento al 100% del ancho del contenedor */
+    height: 100%; /* Establece la altura del elemento al 100% de la altura del contenedor */
+    object-fit: cover; /* Escala el vídeo manteniendo la relación de aspecto y llenando el contenedor */
+    z-index: -1; /* Establece el orden de apilamiento del elemento detrás de otros elementos */
+}
+
+.contenedor {/*Al igual que creamos un "id" creamos un "class" para poder estilar*/
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    align-items: center; /* Centra los elementos hijos verticalmente dentro del contenedor */
+    justify-content: space-between; /* Distribuye uniformemente los elementos hijos a lo largo del contenedor */
+    margin: auto; /* Centra el contenedor horizontalmente en el documento */
+    max-width: 600px; /* Establece el ancho máximo del contenedor */
+    padding: 20px; /* Añade relleno alrededor del contenido del contenedor */
+    background-color: rgba(255, 255, 255, 0.5); /* Establece el color de fondo del contenedor con una 
+    opacidad del 50% */
+}
+
+.contenido {/*Al igual que creamos un "id" creamos un "class" para poder estilar*/
+    flex: 1; /* Hace que el elemento ocupe todo el espacio disponible dentro del contenedor */
+    padding: 20px; /* Añade relleno alrededor del contenido del elemento */
+}
+
+.subtitulo {/*Al igual que creamos un "id" creamos un "class" para poder estilar*/
+    text-align: center; /* Centra el texto horizontalmente dentro del contenedor */
+    color: white; /* Establece el color del texto */
+}
+
+.hijo {/*Al igual que creamos un "id" creamos un "class" para poder estilar*/
+    padding: 20px; /* Añade relleno alrededor del contenido del elemento */
+    border-radius: 10px; /* Establece el radio de las esquinas del elemento */
+    background-color: rgba(255, 255, 255, 0.5); /* Establece el color de fondo del elemento con una opacidad 
+    del 50% */
+}
+
+.boton {/*Al igual que creamos un "id" creamos un "class" para poder estilar*/
+    width: 100%; /* Establece el ancho del botón al 100% del ancho del contenedor */
+    padding: 10px; /* Añade relleno alrededor del contenido del botón */
+    background-color: #007bff; /* Establece el color de fondo del botón */
+    color: #fff; /* Establece el color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Establece el radio de las esquinas del botón */
+    cursor: pointer; /* Cambia el cursor del ratón cuando se coloca sobre el botón */
+}
+
+.perfil {/*Al igual que creamos un "id" creamos un "class" para poder estilar*/
+    border-radius: 50%; /* Establece el radio de las esquinas del elemento, creando un círculo */
+    width: 250px; /* Establece el ancho del elemento */
+    height: 150px; /* Establece la altura del elemento */
+}
